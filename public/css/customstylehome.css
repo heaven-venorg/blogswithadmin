@@ -1,0 +1,9 @@
+/* CSS to home index */
+.post {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    border: 1rem;
+    border-radius: 70px;
+}
