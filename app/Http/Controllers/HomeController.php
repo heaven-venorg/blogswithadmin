@@ -39,7 +39,7 @@ class HomeController extends Controller
     public function show($title)
     {
         //
-        $post = Post::where('title', $title)->first();
+        $post = Post::where('title', $title)->firstOrFail();
         return view('landing.view.show', compact('post'));
     }
 

@@ -32,7 +32,6 @@ class PostController extends Controller
     public function store(Request $request)
     {
         //
-        $content = nl2br($request->input('content'));
         $request->validate([
             'title' => 'required',
             'content' => 'required'
@@ -40,7 +39,7 @@ class PostController extends Controller
 
         Post::create([
             'title' => $request->input('title'),
-            'content' => $content
+            'content' => $request->input('content')
         ]);
 
         return redirect()->route('post.index');

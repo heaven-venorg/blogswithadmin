@@ -3,7 +3,7 @@
     {{-- Import CSS Styleling Home --}}
     <link rel="stylesheet" href="{{ asset('css/customstylehome.css') }}">
     {{-- Tampilan Index Web --}}
-    <div class="d-flex flex-column w-75 align-items-center">
+    <div class="d-flex flex-column w-75 align-items-center justify-content-center gap-4">
         <div class="title">
             <h4 class="text-light text-left">Featured Post</h4>
         </div>
